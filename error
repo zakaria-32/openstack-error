@@ -1,0 +1,29 @@
+i have this problem in openstack i repeated it few times but no way
++./stack.sh: exit trap:553 +./stack.sh: exit trap:554
+exit trap: cleaning up child processes 
++./stack.sh:exit_trap:555 
++./stack.sh:exit_trap:559 
++./stack.sh:exit_trap:560 
++./stack.sh: exit trap:564 
++./stack.sh:kill_spinner: 459 
++./stack.sh: exit trap:566 
++./stack.sh: exit trap:567 Error on exit 
++./stack.sh:exit_trap:569 
++./stack.sh:exit_trap:570 
++./stack.sh: exit trap:572 
++./stack.sh:exit_trap:575
+tack/logs
++./stack.sh: exit trap:584
+[[ True == \T\r\u\e ]]
+echo 'exit_trap: cleaning up child processes'
+kill 100081
+'[' -f /tmp/tmp.KX5pU3pkzm ']' rm /tmp/tmp.KX5pU3pkzm
+kill_spinner
+'[' '!' -z '' ']'
+[[ 124 -ne 0 ]]
+echo 'Error on exit'
+type -p generate-subunit
+generate-subunit 1699901267 8470 fail
+[[ -z /opt/stack/logs ]]
+/opt/stack/data/venv/bin/python3 /opt/stack/devstack/tools/worlddump.py -d /opt/s
+exit 124
